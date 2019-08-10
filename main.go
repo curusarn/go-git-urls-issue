@@ -5,13 +5,13 @@ import (
 	"log"
 	"net/url"
 
-	gitUrls "github.com/whilp/git-urls"
+	"github.com/whilp/git-urls"
 )
 
 func main() {
 	original := "https://github.com/whilp/git-urls"
 	fmt.Println("Original:", original)
-	parsed, err := gitUrls.Parse(original)
+	parsed, err := giturls.Parse(original)
 	if err != nil {
 		log.Fatal(err)
 	}
